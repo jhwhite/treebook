@@ -2,7 +2,7 @@
   <h1>All of the statuses</h1>
 </div>
 
-
+<br /><%= link_to "Post a new status", new_status_path, class: "btn btn-primary" %>
 <% @statuses.each do |status| %>
   <div class="status">
     <strong><%= status.user.full_name %></strong>
@@ -16,4 +16,3 @@
     </div>
   </div>
 <% end %>
-<br /><%= link_to "Post a new status", new_status_path, class: "btn btn-primary" %>
